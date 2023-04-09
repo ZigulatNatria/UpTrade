@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for m in menu %}
+<input type="checkbox" id={{m.id}}" class="del" checked="checked"/>
+<label for={{m.id}}" class="del"></label>
+<div><a href="{% url 'menu' m.id %}">{{m.name}}</a></div>
+{% endfor %}
+</body>
+</html>
