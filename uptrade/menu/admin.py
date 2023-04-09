@@ -1,3 +1,5 @@
 from django.contrib import admin
+from .models import MenuName
 
-# Register your models here.
+
+admin.site.register(MenuName)
